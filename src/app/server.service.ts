@@ -16,7 +16,7 @@ export class ServerService {
     }
 
     getServers(){
-        return this.http.get('https://angular-http-8d920.firebaseio.com/data')
+        return this.http.get('https://angular-http-8d920.firebaseio.com/data.json')
         .map((response: Response)=>{
             const data = response.json()
             return data
